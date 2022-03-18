@@ -1,18 +1,13 @@
 extends layout 
 
 block content
-
-
     if data == 'none'
-        body
         main.container
-            p Select your zone
-            a(href='./kdh01' role='button') Kedah - 1
+            p Assalamualaikum
 
     else
-        body
             main.container
-                p #{data.prayerTime[0].day}, #{data.prayerTime[0].date} - #{data.zone}
+                p #{data.prayerTime[0].day}, #{data.prayerTime[0].date} - #{zone}
                 table
                     thead
                         tr
@@ -35,7 +30,7 @@ block content
                     - i++;
                     table
                         thead
-                            p #{data.prayerTime[i].date}
+                            p #{data.prayerTime[i].day} - #{data.prayerTime[i].date}
                             tr
                             th(scope='col') Subuh
                             th(scope='col') Zuhur

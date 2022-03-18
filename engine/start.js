@@ -1,7 +1,6 @@
 // init app
 const path = require('path');
 const express = require('express');
-const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 
 // create express app
